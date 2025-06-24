@@ -3,6 +3,7 @@ import './Myorder.css'
 import { StoreContext } from '../../context/StoreContext'
 import axios from 'axios'
 import { assets } from '../../assets/assets/frontend_assets/assets'
+import './MyOrder.css'
 
 const Myorder = () => {
 

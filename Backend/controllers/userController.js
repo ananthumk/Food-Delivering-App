@@ -50,7 +50,7 @@ export const registerUser = async(req, res) => {
    if(!validator.isEmail(email)){
        return res.status(400).json({success: false,message: 'Invalid email'})
    }
-   if(!validator.isStrongPassword(password)){
+   if((password)){
          return res.status(400).json({success: false,message: 'Enter a strong password'})
    }
 
