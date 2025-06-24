@@ -1,0 +1,186 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.logo{
+    width: 140px;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.navbar button:hover{
+    background-color: #fff4f2;
+}
+
+.active{
+    border-bottom: 2px solid #49557e;
+    padding-bottom:2px ;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+    top: -8px;
+    right: -8px;
+}
+
+.navbar-right img{
+    width: 24px;
+}
+
+.navbar-search-icon img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.navbar-profile img{
+   width: 30px;
+}
+.profile-sub{
+    display: none;
+    position: relative;
+}
+
+.navbar-profile:hover .profile-sub{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    position: absolute;
+    background-color: #fff4f2;
+    padding: 4px 10px;
+    border: 1px solid tomato;
+    z-index:1;
+    border-radius: 4px;
+    outline: 2px white;
+}
+
+.profile-sub ul{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-sub li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.profile-sub li img{
+    width: 20px;
+}
+
+.profile-sub li:hover{
+    color: tomato;
+}
+
+
+@media (max-width: 1050px) {
+    .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 30px;
+    }
+    .navbar-right{
+        gap: 40px;
+    }
+    .navbar button{
+        padding: 10px 30px;
+    }
+    .navbar-right img,.navbar-search-icon img{
+        width: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 20px;
+    }
+    .navbar-right{
+        gap: 25px;
+    }
+    .navbar button{
+        padding: 8px 20px;
+    }
+    .navbar-right img,.navbar-search-icon img{
+        width: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .logo{
+        width: 100px;
+    }
+    .navbar-menu{
+        gap: 10px;
+    }
+    .navbar-right{
+        gap: 15px;
+    }
+    .navbar button{
+        padding: 5px 15px;
+    }
+    .navbar-right img,.navbar-search-icon img{
+        width: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .logo{
+        width: 100px;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-right{
+        gap: 15px;
+    }
+    .navbar button{
+        padding: 5px 15px;
+    }
+    .navbar-right img,.navbar-search-icon img{
+        width: 20px;
+    }
+}

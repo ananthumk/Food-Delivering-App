@@ -1,0 +1,26 @@
+.app-download{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    gap: 20px;
+    font-size: max(1.4vw, 20px);
+}
+
+.app-download-platforms img{
+   width: 150px;
+   margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+    .app-download{
+        font-size: 12px;
+        padding: 30px;
+    }
+    .app-download-platforms img{
+        width: 100px;
+    }
+}

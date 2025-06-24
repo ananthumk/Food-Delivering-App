@@ -1,0 +1,95 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.order h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.order-list-container {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+.order-list-container img {
+    width: 40px;
+
+}
+
+.order-list-container p {
+    font-size: 13px;
+}
+
+.order-list-container .order-details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.order-user-name {
+    font-weight: 600;
+}
+
+.order-address {
+    padding: 0px;
+    margin: 0px;
+}
+
+.order-list-container select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .order {
+        padding: 10px;
+    }
+
+    .order h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .order-container {
+        padding: 0px
+    }
+
+    .order-list-container {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        row-gap: 5px;
+        padding: 10px;
+    }
+
+    .order-list-container img {
+        width: 30px;
+    }
+
+    .order-list-container p {
+        font-size: 11px;
+    }
+
+    .order-list-container select {
+        padding: 3px;
+        font-size: 11px;
+    }
+}

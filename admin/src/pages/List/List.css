@@ -1,0 +1,41 @@
+.list{
+    padding: 15px;
+    width: 100%;
+}
+
+.food-item-table{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 6px 15px;
+    border: 1px solid #eaeaea;
+}
+
+.food-item-table.title{
+    background-color: #f9f9f9;
+}
+
+.food-item-table img{
+    width:60px;
+}
+
+.food-item-table p{
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .food-item-table{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .food-item-table img{
+        width:40px;
+    }
+    .food-item-table p{
+        font-size: 12px;
+    }
+    .food-item-table b{
+        font-size: 10px;
+    }
+    
+}
+
